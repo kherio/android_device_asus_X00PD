@@ -25,11 +25,8 @@
 # components.
 
 LOCAL_PATH := $(call my-dir)
-
 ifeq ($(TARGET_DEVICE),X00PD)
-
 include $(call all-makefiles-under,$(LOCAL_PATH))
-
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := wifi_symlinks

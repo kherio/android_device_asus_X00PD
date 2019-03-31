@@ -404,4 +404,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/asus/X00PD/X00PD-vendor.mk)
-$(call inherit-product-if-exists, vendor/asus/msm8937-common/msm8937-common-vendor.mk>
+$(call inherit-product-if-exists, vendor/asus/msm8937-common/msm8937-common-vendor.mk)
