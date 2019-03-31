@@ -178,7 +178,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.0-service-custom
 
 TARGET_FS_CONFIG_GEN += \
-    device/xiaomi/land/fs_config/file_caps.fs
+    device/asus/X00PD/fs_config/file_caps.fs
 
 # FM
 PRODUCT_PACKAGES += \
@@ -391,7 +391,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 #for internal debug we can remove this
 #ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -403,4 +403,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
  security.perf_harden=0
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/xiaomi/land/land-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/X00PD/X00PD-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/msm8937-common/msm8937-common-vendor.mk>
