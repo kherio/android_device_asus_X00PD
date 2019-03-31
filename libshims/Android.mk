@@ -82,7 +82,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_SHARED_LIBRARIES := libc
 LOCAL_MODULE := libshims_camera
-LOCAL_CLANG := false
+LOCAL_CLANG := true
 LOCAL_CXX_STL := none
 LOCAL_SANITIZE := never
 LOCAL_MODULE_TAGS := optional
