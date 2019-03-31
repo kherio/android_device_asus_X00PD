@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from land device
+# Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := asus
@@ -32,7 +32,7 @@ PRODUCT_NAME := lineage_X00PD
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
-TARGET_VENDOR_PRODUCT_NAME := land
+TARGET_VENDOR_PRODUCT_NAME := X00PD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=asus/WW_X00PD/ASUS_X00P_4:8.0.0/OPR1.170623.032/15.00.1810.87:user/release-keys \
