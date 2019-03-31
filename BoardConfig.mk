@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/land
+DEVICE_PATH := device/asus/X00PD
 
 # Architecture
 TARGET_ARCH := arm64
@@ -45,14 +45,13 @@ TARGET_NO_BOOTLOADER := true
 
 # kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
 TARGET_KERNEL_APPEND_DTB := true
-TARGET_KERNEL_CONFIG := land_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
+TARGET_KERNEL_CONFIG := E300L_WW-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/asus/msm8937
 
 
 # ANT
@@ -176,9 +175,9 @@ USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_land
+TARGET_INIT_VENDOR_LIB := libinit_X00PD
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_land
+TARGET_RECOVERY_DEVICE_MODULES := libinit_X00PD
 
 # Keystore
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
@@ -242,4 +241,5 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/xiaomi/land/BoardConfigVendor.mk
+-include vendor/asus/X00PD/BoardConfigVendor.mk
+-include vendor/asus/msm8937-common/BoardConfigVendor.mk
