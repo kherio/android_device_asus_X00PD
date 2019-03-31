@@ -25,18 +25,18 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := land
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_land
+PRODUCT_BRAND := asus
+PRODUCT_DEVICE := X00PD
+PRODUCT_MANUFACTURER := asus
+PRODUCT_NAME := lineage_X00PD
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 TARGET_VENDOR_PRODUCT_NAME := land
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Xiaomi/land/land:6.0.1/MMB29M/V8.5.3.0.MALMIED:user/release-keys \
-    PRIVATE_BUILD_DESC="land-user 6.0.1 MMB29M V8.5.3.0.MALMIED release-keys"
+    BUILD_FINGERPRINT=asus/WW_X00PD/ASUS_X00P_4:8.0.0/OPR1.170623.032/15.00.1810.87:user/release-keys \
+    PRIVATE_BUILD_DESC="ASUS_X00P_4:8.0.0/OPR1.170623.032/15.00.1810.87:user/release-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
